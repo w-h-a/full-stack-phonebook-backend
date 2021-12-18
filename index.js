@@ -6,7 +6,6 @@ const cors = require("cors")
 const morgan = require('morgan')
 const Person = require('./models/person')
 
-
 const app = express()
 
 morgan.token("postData", req => JSON.stringify(req.body))
