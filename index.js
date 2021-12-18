@@ -63,8 +63,7 @@ app.delete("/api/persons/:id", (req, res, nxt) => {
 app.put("/api/persons/:id", (req, res, nxt) => {
     const { body } = req
 
-    const person =
-        {
+    const person = {
             name: body.name,
             number: body.number,
         }
