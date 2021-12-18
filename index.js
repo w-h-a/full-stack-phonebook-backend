@@ -79,7 +79,7 @@ app.put("/api/persons/:id", (req, res, nxt) => {
 })
 
 app.post('/api/persons', (req, res, nxt) => {
-    const { body } = request
+    const { body } = req
 
     const person = new Person({
         name: body.name,
